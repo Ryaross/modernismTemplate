@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página Principal</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<%autores.forEach(autor=>{%>
+		<center>
+			<h2><a href="/autores/<%=autor.id%>"><%=autor.nome%></a></h2>
+			<h3><%=autor.id%></h3>
+		</center>
+		<hr>
+		<br>
+	<%});%>
+</body>
+</html>
